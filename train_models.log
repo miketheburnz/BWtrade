@@ -1,0 +1,57 @@
+2024-06-18 17:10:38,811 - INFO - Model for EURUSD saved at models/lstm_model_EURUSD.keras
+2024-06-18 17:10:47,903 - INFO - Model for GBPUSD saved at models/lstm_model_GBPUSD.keras
+2024-06-18 17:10:57,855 - INFO - Model for USDJPY saved at models/lstm_model_USDJPY.keras
+2024-06-18 17:11:07,184 - INFO - Model for AUDUSD saved at models/lstm_model_AUDUSD.keras
+2024-06-18 17:11:16,510 - INFO - Model for USDCAD saved at models/lstm_model_USDCAD.keras
+2024-06-18 17:11:25,887 - INFO - Model for USDCHF saved at models/lstm_model_USDCHF.keras
+2024-06-18 17:11:36,095 - INFO - Model for NZDUSD saved at models/lstm_model_NZDUSD.keras
+2024-06-18 17:11:46,355 - INFO - Model for EURGBP saved at models/lstm_model_EURGBP.keras
+2024-06-18 17:11:55,901 - INFO - Model for EURJPY saved at models/lstm_model_EURJPY.keras
+2024-06-18 17:12:05,137 - INFO - Model for GBPJPY saved at models/lstm_model_GBPJPY.keras
+2024-06-18 17:12:32,121 - INFO - Model for EURUSD saved at models/lstm_model_EURUSD.keras
+2024-06-18 17:12:43,389 - INFO - Model for GBPUSD saved at models/lstm_model_GBPUSD.keras
+2024-06-18 17:12:53,691 - INFO - Model for USDJPY saved at models/lstm_model_USDJPY.keras
+2024-06-18 17:13:02,946 - INFO - Model for AUDUSD saved at models/lstm_model_AUDUSD.keras
+2024-06-18 17:13:13,167 - INFO - Model for USDCAD saved at models/lstm_model_USDCAD.keras
+2024-06-18 17:13:23,896 - INFO - Model for USDCHF saved at models/lstm_model_USDCHF.keras
+2024-06-18 17:13:32,954 - INFO - Model for NZDUSD saved at models/lstm_model_NZDUSD.keras
+2024-06-18 17:13:43,370 - INFO - Model for EURGBP saved at models/lstm_model_EURGBP.keras
+2024-06-18 17:13:55,033 - INFO - Model for EURJPY saved at models/lstm_model_EURJPY.keras
+2024-06-18 17:14:05,278 - INFO - Model for GBPJPY saved at models/lstm_model_GBPJPY.keras
+2024-06-18 17:14:14,744 - INFO - Model for AUDJPY saved at models/lstm_model_AUDJPY.keras
+2024-06-18 17:14:25,212 - INFO - Model for CHFJPY saved at models/lstm_model_CHFJPY.keras
+2024-06-18 17:14:34,124 - INFO - Model for EURAUD saved at models/lstm_model_EURAUD.keras
+2024-06-18 17:14:43,454 - INFO - Model for EURCAD saved at models/lstm_model_EURCAD.keras
+2024-06-18 17:14:52,619 - INFO - Model for EURNZD saved at models/lstm_model_EURNZD.keras
+2024-06-18 17:15:01,265 - INFO - Model for GBPAUD saved at models/lstm_model_GBPAUD.keras
+2024-06-18 17:15:09,863 - INFO - Model for GBPCAD saved at models/lstm_model_GBPCAD.keras
+2024-06-18 17:15:19,524 - INFO - Model for GBPNZD saved at models/lstm_model_GBPNZD.keras
+2024-06-18 17:15:31,603 - INFO - Model for AUDCAD saved at models/lstm_model_AUDCAD.keras
+2024-06-18 17:15:41,353 - INFO - Model for AUDCHF saved at models/lstm_model_AUDCHF.keras
+2024-06-18 17:15:50,762 - INFO - Model for AUDNZD saved at models/lstm_model_AUDNZD.keras
+2024-06-18 17:16:00,903 - INFO - Model for CADCHF saved at models/lstm_model_CADCHF.keras
+2024-06-18 17:16:15,258 - INFO - Model for CADJPY saved at models/lstm_model_CADJPY.keras
+2024-06-18 17:16:29,823 - INFO - Model for NZDJPY saved at models/lstm_model_NZDJPY.keras
+2024-06-18 17:16:45,175 - INFO - Model for NZDCHF saved at models/lstm_model_NZDCHF.keras
+2024-06-18 17:16:56,647 - INFO - Model for USDRUB saved at models/lstm_model_USDRUB.keras
+2024-06-18 17:16:56,647 - ERROR - Error processing USDZAR: [Errno 2] No such file or directory: 'data/historical_data/USDZAR.csv'
+2024-06-18 17:16:56,647 - ERROR - Error processing USDSGD: [Errno 2] No such file or directory: 'data/historical_data/USDSGD.csv'
+2024-06-18 17:16:56,647 - ERROR - Error processing USDHKD: [Errno 2] No such file or directory: 'data/historical_data/USDHKD.csv'
+2024-06-18 17:16:56,647 - ERROR - Error processing USDTRY: [Errno 2] No such file or directory: 'data/historical_data/USDTRY.csv'
+2024-06-18 17:16:56,647 - ERROR - Error processing USDSEK: [Errno 2] No such file or directory: 'data/historical_data/USDSEK.csv'
+2024-06-18 17:16:56,647 - ERROR - Error processing USDDKK: [Errno 2] No such file or directory: 'data/historical_data/USDDKK.csv'
+2024-06-18 17:16:56,647 - ERROR - Error processing USDNOK: [Errno 2] No such file or directory: 'data/historical_data/USDNOK.csv'
+2024-06-18 17:16:56,647 - ERROR - Error processing USDPLN: [Errno 2] No such file or directory: 'data/historical_data/USDPLN.csv'
+2024-06-18 17:16:56,647 - ERROR - Error processing USDMXN: [Errno 2] No such file or directory: 'data/historical_data/USDMXN.csv'
+2024-06-18 17:16:56,647 - ERROR - Error processing USDCNH: [Errno 2] No such file or directory: 'data/historical_data/USDCNH.csv'
+2024-06-18 17:16:56,647 - ERROR - Error processing USDHUF: [Errno 2] No such file or directory: 'data/historical_data/USDHUF.csv'
+2024-06-18 17:16:56,647 - ERROR - Error processing USDTHB: [Errno 2] No such file or directory: 'data/historical_data/USDTHB.csv'
+2024-06-18 17:16:56,647 - ERROR - Error processing USDILS: [Errno 2] No such file or directory: 'data/historical_data/USDILS.csv'
+2024-06-18 17:16:56,647 - ERROR - Error processing USDCOP: [Errno 2] No such file or directory: 'data/historical_data/USDCOP.csv'
+2024-06-18 17:16:56,647 - ERROR - Error processing USDBRL: [Errno 2] No such file or directory: 'data/historical_data/USDBRL.csv'
+2024-06-18 17:16:56,647 - ERROR - Error processing USDKRW: [Errno 2] No such file or directory: 'data/historical_data/USDKRW.csv'
+2024-06-18 17:16:56,647 - ERROR - Error processing USDINR: [Errno 2] No such file or directory: 'data/historical_data/USDINR.csv'
+2024-06-18 17:16:56,647 - ERROR - Error processing USDIDR: [Errno 2] No such file or directory: 'data/historical_data/USDIDR.csv'
+2024-06-18 17:16:56,647 - ERROR - Error processing USDPHP: [Errno 2] No such file or directory: 'data/historical_data/USDPHP.csv'
+2024-06-18 17:16:56,647 - ERROR - Error processing USDMYR: [Errno 2] No such file or directory: 'data/historical_data/USDMYR.csv'
+2024-06-18 17:16:56,647 - ERROR - Error processing USDVND: [Errno 2] No such file or directory: 'data/historical_data/USDVND.csv'

@@ -1,0 +1,13 @@
+Flask
+MetaTrader5
+yfinance
+pandas
+numpy
+keras
+xgboost
+scikit-learn
+textblob
+requests
+smtplib
+talib
+schedule

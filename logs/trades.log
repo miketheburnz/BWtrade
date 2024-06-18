@@ -1,0 +1,23 @@
+ 
+2024-06-18 18:40:49.731 SAST [12192] LOG:  starting PostgreSQL 16.3, compiled by Visual C++ build 1939, 64-bit
+2024-06-18 18:40:49.736 SAST [12192] LOG:  could not bind IPv6 address "::1": Permission denied
+2024-06-18 18:40:49.736 SAST [12192] LOG:  could not bind IPv4 address "127.0.0.1": Permission denied
+2024-06-18 18:40:49.736 SAST [12192] WARNING:  could not create listen socket for "localhost"
+2024-06-18 18:40:49.736 SAST [12192] FATAL:  could not create any TCP/IP sockets
+2024-06-18 18:40:49.738 SAST [12192] LOG:  database system is shut down
+2024-06-18 18:44:35.624 SAST [19864] LOG:  starting PostgreSQL 16.3, compiled by Visual C++ build 1939, 64-bit
+2024-06-18 18:44:35.629 SAST [19864] LOG:  could not bind IPv6 address "::1": Permission denied
+2024-06-18 18:44:35.629 SAST [19864] LOG:  could not bind IPv4 address "127.0.0.1": Permission denied
+2024-06-18 18:44:35.629 SAST [19864] WARNING:  could not create listen socket for "localhost"
+2024-06-18 18:44:35.629 SAST [19864] FATAL:  could not create any TCP/IP sockets
+2024-06-18 18:44:35.631 SAST [19864] LOG:  database system is shut down
+2024-06-18 18:44:53.679 SAST [3956] LOG:  starting PostgreSQL 16rc1, compiled by Visual C++ build 1936, 64-bit
+2024-06-18 18:44:53.685 SAST [3956] LOG:  could not bind IPv6 address "::1": Permission denied
+2024-06-18 18:44:53.685 SAST [3956] LOG:  could not bind IPv4 address "127.0.0.1": Permission denied
+2024-06-18 18:44:53.686 SAST [3956] WARNING:  could not create listen socket for "localhost"
+2024-06-18 18:44:53.686 SAST [3956] FATAL:  could not create any TCP/IP sockets
+2024-06-18 18:44:53.688 SAST [3956] LOG:  database system is shut down
+2024-06-18 18:46:56.480 SAST [17260] LOG:  starting PostgreSQL 16rc1, compiled by Visual C++ build 1936, 64-bit
+2024-06-18 18:46:56.480 SAST [17260] LOG:  listening on IPv4 address "127.0.0.1", port 5433
+2024-06-18 18:46:56.547 SAST [1208] LOG:  database system was shut down at 2024-06-18 18:21:24 SAST
+2024-06-18 18:46:56.591 SAST [17260] LOG:  database system is ready to accept connections

@@ -1,0 +1,6 @@
+{
+    "currency_pairs": ["EURUSD", "GBPUSD", "USDJPY"],
+    "trade_volume": 0.01,
+    "stop_loss": 50,
+    "take_profit": 100
+}

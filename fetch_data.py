@@ -1,26 +1,41 @@
-import os
 import yfinance as yf
 import pandas as pd
+import talib
+from textblob import TextBlob
+import requests
+import numpy as np
+from utils.logger import setup_logging
 
-currency_pairs = ['EURUSD', 'GBPUSD', 'USDJPY', 'AUDUSD', 'USDCAD', 'USDCHF', 'NZDUSD', 'EURGBP', 'EURJPY', 'GBPJPY', 'AUDJPY', 'CHFJPY', 'EURAUD', 'EURCAD', 'EURNZD', 'GBPAUD', 'GBPCAD', 'GBPNZD', 'AUDCAD', 'AUDCHF', 'AUDNZD', 'CADCHF', 'CADJPY', 'NZDJPY', 'NZDCHF', 'USDRUB', 'USDZAR', 'USDSGD', 'USDHKD', 'USDTRY', 'USDSEK', 'USDDKK', 'USDNOK', 'USDPLN', 'USDMXN', 'USDCNH', 'USDHUF', 'USDTHB', 'USDILS', 'USDCLP', 'USDCOP', 'USDBRL', 'USDKRW', 'USDINR', 'USDIDR', 'USDPHP', 'USDMYR', 'USDVND']
+logger = setup_logging('fetch_data.log')
 
-def fetch_data(pair):
-    pair_yahoo = pair + "=X"
-    data = yf.download(pair_yahoo, period="1mo", interval="1h")
-    if data.empty:
-        print(f"Error fetching data for {pair}")
+def fetch_market_data(pair):
+    try:
+        data = yf.download(pair + "=X", period="1mo", interval="1h")
+        if data.empty:
+            logger.error(f"Error fetching market data for {pair}")
+            return None
+        return get_technical_indicators(data)
+    except Exception as e:
+        logger.error(f"Error fetching market data for {pair}: {e}")
         return None
-    data = data.rename(columns={
-        'Open': 'Open',
-        'High': 'High',
-        'Low': 'Low',
-        'Close': 'Close'
-    })
-    data.to_csv(f'data/historical_data_{pair}.csv')
+
+def get_technical_indicators(data):
+    data['SMA'] = talib.SMA(data['Close'], timeperiod=14)
+    data['EMA'] = talib.EMA(data['Close'], timeperiod=14)
+    data['MACD'], data['MACD_signal'], data['MACD_hist'] = talib.MACD(data['Close'], fastperiod=12, slowperiod=26, signalperiod=9)
+    data['RSI'] = talib.RSI(data['Close'], timeperiod=14)
+    data['BB_upper'], data['BB_middle'], data['BB_lower'] = talib.BBANDS(data['Close'], timeperiod=14, nbdevup=2, nbdevdn=2, matype=0)
+    data['ATR'] = talib.ATR(data['High'], data['Low'], data['Close'], timeperiod=14)
     return data
 
-# Create data directory if it doesn't exist
-os.makedirs('data', exist_ok=True)
-
-for pair in currency_pairs:
-    fetch_data(pair)
+def fetch_sentiment_analysis(pair):
+    try:
+        url = f'https://newsapi.org/v2/everything?q={pair}&apiKey=617ca539a455482c9a08f204f7af4d47'
+        response = requests.get(url)
+        articles = response.json().get('articles', [])
+        sentiment_scores = [TextBlob(article['title']).sentiment.polarity for article in articles]
+        avg_sentiment = np.mean(sentiment_scores) if sentiment_scores else 0
+        return avg_sentiment
+    except Exception as e:
+        logger.error(f"Error fetching sentiment data for {pair}: {e}")
+        return 0

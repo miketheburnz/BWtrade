@@ -1,0 +1,105 @@
+Folder PATH listing for volume Win10SL
+Volume serial number is 1EF7-303A
+C:.
+³   .gitattributes
+³   app.py
+³   compile_deploy_mql.py
+³   config.py
+³   convert_xml_to_json.py
+³   optimization_data.json
+³   project_structure.txt
+³   README.md
+³   ReportOptimizer-83005574.xml
+³   requirements.txt
+³   Ta_lib-0.4.25-cp311-cp311-win_amd64.whl
+³   Trade report-83005574 2024-06-18 14-10.pdf
+³   Trade report-83005574 2024-06-18 15-25.pdf
+³   train_models.py
+³   
+ÃÄÄÄdata
+³   ÀÄÄÄhistorical_data
+³           AUDCAD.csv
+³           AUDCHF.csv
+³           AUDJPY.csv
+³           AUDNZD.csv
+³           AUDUSD.csv
+³           CADCHF.csv
+³           CADJPY.csv
+³           CHFJPY.csv
+³           EURAUD.csv
+³           EURCAD.csv
+³           EURGBP.csv
+³           EURJPY.csv
+³           EURNZD.csv
+³           EURUSD.csv
+³           GBPAUD.csv
+³           GBPCAD.csv
+³           GBPJPY.csv
+³           GBPNZD.csv
+³           GBPUSD.csv
+³           NZDCHF.csv
+³           NZDJPY.csv
+³           NZDUSD.csv
+³           USDCAD.csv
+³           USDCHF.csv
+³           USDJPY.csv
+³           USDRUB.csv
+³           
+ÃÄÄÄEA
+³       BWtrade.ex5
+³       BWtrade.mq5
+³       sqlite3.mqh
+³       
+ÃÄÄÄlogs
+³       config.db
+³       trades.db
+³       trading_app.log
+³       
+ÃÄÄÄmodels
+³       lstm_model_AUDCAD.keras
+³       lstm_model_AUDCHF.keras
+³       lstm_model_AUDJPY.keras
+³       lstm_model_AUDNZD.keras
+³       lstm_model_AUDUSD.keras
+³       lstm_model_CADCHF.keras
+³       lstm_model_CADJPY.keras
+³       lstm_model_CHFJPY.keras
+³       lstm_model_EURAUD.keras
+³       lstm_model_EURCAD.keras
+³       lstm_model_EURGBP.keras
+³       lstm_model_EURJPY.keras
+³       lstm_model_EURNZD.keras
+³       lstm_model_EURUSD.keras
+³       lstm_model_GBPAUD.keras
+³       lstm_model_GBPCAD.keras
+³       lstm_model_GBPJPY.keras
+³       lstm_model_GBPNZD.keras
+³       lstm_model_GBPUSD.keras
+³       lstm_model_NZDCHF.keras
+³       lstm_model_NZDJPY.keras
+³       lstm_model_NZDUSD.keras
+³       lstm_model_USDCAD.keras
+³       lstm_model_USDCHF.keras
+³       lstm_model_USDJPY.keras
+³       lstm_model_USDRUB.keras
+³       
+ÃÄÄÄstatic
+³       BWtrade.css
+³       BWtrade.js
+³       
+ÃÄÄÄtemplates
+³       config.html
+³       index.html
+³       logs.html
+³       reports.html
+³       
+ÀÄÄÄutils
+        alerting.py
+        backtesting.py
+        data_fetcher.py
+        logger.py
+        model_trainer.py
+        risk_management.py
+        trading.py
+        _init_.py
+        

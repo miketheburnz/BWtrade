@@ -1,0 +1,1 @@
+def calculate_position_size(equity, risk_percentage, stop_loss_pips, pair_price):    risk_amount = equity * risk_percentage / 100    position_size = risk_amount / (stop_loss_pips * pair_price)    return position_size

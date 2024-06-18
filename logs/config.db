@@ -1,4 +1,0 @@
-from django.http import JsonResponse
-
-def example_view(request):
-    return JsonResponse({'status': 'example endpoint'})
